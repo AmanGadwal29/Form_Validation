@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+    <link rel="stylesheet" href="form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+         <div class="flyimage"> <img src="./images/kisspng-portable-network-graphics-clip-art-child-drawing-s-5d2f95893760d8.5484395315633995612268.png" alt=""></div>
+         <div class="getready">Get ready to fly!</div>
+      </div>
+      <form id="form">
+        <div class="topsection" >
+          <div class="title">Get Started</div>
+          <div class="question">Already have an account?</div>
+          <div class="socialBtn">
+            <button class="googleBtn1">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEkUlEQVR4nO2Zb0wbZRzHn3taesUtRpOJYbo/DoQM5c/GMgryzxkYxbGBiQsbNBCEFGaIY8zCCuaUMSiQAQMGQWAgcSY2GeuNuzpc8NqNvRoCItE3841Dthj3ToNzbX+mVRBI197Zo2VJv8n3XZ+nn89dn6dPrwj5448/HgcoJIWqgGIoxywU4HuQTfwJSsIKBxBAKgJIQzbIJhZBhX+BE/g6VAUU2ccgXwc0UgWU4tvwNmGBJASCqiQsoMa3QRsQ433wOlk4qPEsvCkQ2llTEUAxnoEaFOIdeA3RCumEzWPwtT2IrHCK0K0f+HkUCMX4B9HBk9b0PTwNFJKJC9+NngcVfrDu8En/toJoFw9+EMnhOPGr1+DLCE40eIeAGn/vPXgsMvyHRIfgrbEMT0IlroUmaQpQaAtQKAjOSN6C05hy7Db21zgbW4pN4sI3kyGQQVh5g5+W9PJZfEChZ+ADydAqkVKR4R1vVIHv8IIvwPNwDr0oeP4aFAJ5+P76wJvl22CcfAQaCUCyC/gSPAV6JEEbLWAmdWAmwdHeAIB0wvmV35DweiQBs2x+WcDeURmACv8Hn0lYoAK9hDZiwCSPXwW/VI4E0En/ObuclPSjjRowybROBZY6FPAAyhGJNmrATF5xKWCSdQiZL1gzC2I0XDthO9rUd9e9gImccynAkRm+EAjWzMIbddcW+Qg8dCMQ6iuB3TW3rHwEHrkWQJt9JbCjehKeaoHtVd+C5x+hm7IwXwns1t60Pd2L+JNRHovYTI642UY7fSVwRDc8z0NAduZJ8A+5Z6Geif/jvF4RiEROy3D+puiPvrG4Eii/0DjqXoALVDiDnx0PBhWthENXs6HDGHtJbIGTnfX97u6Arq/iuHsBQBjMsntL4DYzCfRYOGQbDjvg7c2jlZaL11/bJhZ8W496Z2SNyeoK/vVas4XiKH5P88BENtrhfzdthrNMwjL4ylaPJi9wXIrHjwcpjpIeafxswd3VL2lrm+A9KXCBL98df+GvEjrdKfxSP2YTZjyRoDhKmt/SM+d2/6+egsbuylhBkzcwihlX8CvvRP/X4VuFwvfeiNhe1lX3E5/d51hz75zQ+RE9FvZKPq208pHIp5WWzq/2DlCDKXJ38w6PRW1qZ/b15RmU1pyRHDja2uH2FEp9ekrQl+dyutmY1iweAitFGljFdJdxL6VnIw5cGdsVdJkL2zJgjEq8aNxTV8ckTNpfs3JM1kgOFPZQsLXqO6cC77c3dSNPomPjpvkKeNKiwXLYWX1nFfy7TQM/Ik+j10fINHTqfW9IFH5RCJG1Jgd8ev2Xv53o6hJ0cHxiOG7HczVM4oI3JI7pc0HVemGeGq4MEgV+hYT8LBM/K2RN/J+eYxXTRmPo+v3m7jNGNecaMq2iX3lDprWXjWlG3sgwvSe0gY2beseQ5TF4ztXDjqt++caru5C3MzQWGdvM7L9VZDj4WCh4AZ3xuJGJm/icifb+n3xrowck6WeiC1uN+0a1TOLPajptUWVQWu13yH4IzDVk2tSGtMWqa8nzLex+ts8YU2Afg/zxxx/kaf4GzSVnCicBYF0AAAAASUVORK5CYII="
+              />
+              Sign Up
+            </button>
+            <button class="fbBtn2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC8klEQVR4nO2Zu2sUURSHx2cRFRErCx+gltqkF1Q0GguJT9DKTvwHbBSCQgySRgttbMRCozZRI6I2dpLGIIra2xnzUOPu/M6QT2520BB3Zmd27+5sYH9wup1z7jdn7rnnng2CjjpqbwFrzeg1Y1DiqRmfJSYlFNukGZ8knphxzYzD7pmgHQQscwuSeChRNoM8JlGSGDbjkPMVFKEo4qQZ7/MuPsXGzTjWMoBymZ0Srz0CLM7Sy1KJHU2FMOO4xHSzIOwfzI8o4kyz9kJ/swHsfxv0tndiiNsFQBDbLS8wcamkYLvaEEQUcboNIHAWRZxtpDr99LEId16YcceVbOcX2AisBzaUSmwLQ3aZMVTDx0ypxPbcIL5KrMQrYFOteGHIuQy+XuSCMOOEJ4hRYGWWmFlArGJ9eapUwye2xIT7hLK+vBwg7zJVMdc7edqgA1khcoJgRk9Nh64B9AEShuxOidFtxs242Zw3M8ZyZPt+KgSwrp4utkqgGWBFEoRE2KD/30BXIkh8n/DxWY2nZOOupxgH00AGPQV5kwLytel7UJWbXcNBJJ5X8++qjbsteooxkpaRL56CjCaArPaUDdy1OS0j35cKiMS3NJBwCYGUfYP0ueZvkSVOR6r8dt7MuJ4TJEwDmaoD5EDgQRIPcoJMJDpzs6iiQFwPZfnifkx7K6NFgADLJWZ9lt+BgkC2er3+mnGkjupxIe6f/lrSXCo+ELur2Pk6QHrS3kyXxK86nLa0/ErMAmtS0yzxaAmADAe15LrKdgcxY3/Wq+6HNgYZrwmxICtH2xikN2jVOKhZIMo7DnJygzM3FW8XEIlpYEtQj1xDKDFXNIjEXBRxqi6IBTBXigYxo78hiAUwNwoEGQp8SuJi1s/MB4gqsfxkIuGvt6lmg6hy5c42422kU5V41iwQiRFgc9AqxZ3ymEeQt27uHBQliT0S99yYNC+IO6fc5NH5CNpFVBa5T+KSKwwJv1kl8Vjishl73TOtX2lHHQV59AdJnUUBFirM9wAAAABJRU5ErkJggg==">facebook</button>
+          </div>
+          <div class="or" >Or</div>
+        </div>
+
+        <!-- username input -->
+        <div>
+          <label for="username">Username</label>
+          <i class="fa-solid fa-user" style="color: #01060e"></i>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter your username"
+          />
+          <i class="fa-solid fa-triangle-exclamation failure-btn"></i>
+          <i class="fa-regular fa-circle-check success-btn"></i>
+          <div class="error"></div>
+        </div>
+        <!-- email input -->
+        <div>
+          <label for="email">Enter your Email</label>
+          <i class="fa-solid fa-envelope"></i>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="abc@gmail.com"
+          />
+          <i class="fa-solid fa-triangle-exclamation failure-btn"></i>
+          <i class="fa-regular fa-circle-check success-btn"></i>
+          <div class="error"></div>
+        </div>
+        <!-- password input -->
+        <div>
+          <label for="password">Enter Password</label>
+          <i class="fa-solid fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password here"
+          />
+          <i class="fa-solid fa-triangle-exclamation failure-btn"></i>
+          <i class="fa-regular fa-circle-check success-btn"></i>
+          <div class="error"></div>
+        </div>
+        <button type="submit" id="submit" onclick="myFunction()" >Submit</button>
+      </form>
+    </div>
+
+    <script src="formjava.js"></script>
+  </body>
+</html>
