@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+    width: 100vw;
+    background-image: url(./images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.welcome{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    padding: 10px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+     text-align: center;
+    justify-content: center;
+    font-size: 80px ;
+    text-shadow: 3px 3px 4px rgb(120, 116, 116),-3px -3px 4px black;
+    font-family: cursive;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+}
+
+@media screen and (max-width: 800px){
+    .text{
+        font-size: 50px;
+    }
+}
