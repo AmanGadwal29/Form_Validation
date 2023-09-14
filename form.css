@@ -1,0 +1,249 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* BODY */
+body{
+    font-family: sans-serif;
+     
+    
+}
+
+.container{
+    
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ 
+/* FORM TAG */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: rgba(255, 21, 21, 0.854); */
+    height: 100vh;
+    min-width: 350px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.281);
+    padding: 40px;
+}
+
+.content{
+    height: 100vh;
+    width: calc(100vw );
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0.6)),url(./images/space);  
+    background-size: cover;
+     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%-400px) 
+  ;
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+  
+}
+.flyimage>img{
+    width: 600px;
+    height: auto;
+    position: relative;
+    animation-name: fly;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    filter: drop-shadow(2px 2px 10px rgba(255, 255, 255, 0.445));
+}
+@keyframes fly{
+    from{
+        /* transform: translateX(-2%); */
+        transform: translateY(-2%);
+    }
+    to{ 
+        transform: translateX(2%);
+        /* transform:translateY(2%); */
+    }
+}
+
+.getready{
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    font-family: cursive;
+    text-shadow: 3px 3px 5px rgb(126, 123, 123);
+}
+
+
+/* TITLE OF FORM */
+.title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(4, 4, 108);
+}
+
+.question{
+    font-size: 15px;
+    color: rgb(4, 4, 108);
+}
+
+.socialBtn{
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+.fbBtn2{
+    background-color: rgb(53, 53, 171);
+    color: white;
+}
+
+.googleBtn1{
+    background-color: white;
+}
+.googleBtn1 , .fbBtn2{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width:100% ;
+     padding: 5px 10px;
+     font-size: 15px;
+     gap: 5px;
+     border-radius: 5px;
+}
+.googleBtn1>img,.fbBtn2>img{
+    height: 25px;
+}
+
+.or{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: rgb(5, 5, 104);
+}
+
+/* INPUT TAKEN */
+form>div>input{
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    outline: none;
+    border: 3px solid rgba(168, 168, 252, 0.6);
+    padding: 0px 30px;
+    margin-bottom:10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0,0.1);
+     
+}
+input:focus{
+    border: 3px solid rgb(4, 4, 108);
+}
+
+/* ICON POSITIONING */
+label{
+    font-size: 20px;
+    display: block;
+    margin-bottom:10px;
+}
+
+form>div{
+    position: relative;
+}
+ form>div>i{
+    position: absolute;
+    padding: 10px;
+    
+ }
+
+ .failure-btn,.success-btn{
+    right: 0 ;
+    opacity: 0;  
+ }
+ .failure-btn{
+    color: rgb(203, 7, 7);
+ }
+ .success-btn{
+    color: green;
+ }
+
+ /* ERROR  */
+
+.error{
+    height: 20px;
+    color: red;
+    font-size: 14px;
+}
+
+/* SUBMIT BUTTON */
+
+#submit{
+    text-shadow: 0.5px 0.5px 2px rgba(255, 255, 255, 0.454);
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 20%;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color:  rgb(4, 4, 108);
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 2px solid  rgb(4, 4, 108);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0,0.1);
+    transition: 0.2s all;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: rgb(4, 4, 108);
+    border: 2px solid  rgb(4, 4, 108);
+    color:  rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1150px) and (min-width:850px){
+    .flyimage>img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .container{
+    
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .flyimage>img{
+        width: 200px;
+    }
+    .content{
+       padding:20px 0px;
+        height: auto;
+        width:  100%;
+        background-image:url(./images/space);  
+        background-size: cover;
+         background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: calc(100%-400px)  */
+        /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+      
+    }
+
+    .getready{
+        text-align: center;
+        
+    }
+    form{
+        width: 100%;
+        padding: 40px;
+    }
+}
